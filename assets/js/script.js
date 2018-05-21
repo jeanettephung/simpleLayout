@@ -9,9 +9,9 @@ window.onload = function() {
             var int_scrollPos = window.pageYOffset;
             
             if (int_scrollPos === 0) {
-                el_header.classList.remove('header--scroll');
+                el_header.classList.remove('transition--scroll');
             } else {
-                el_header.classList.add('header--scroll');
+                el_header.classList.add('transition--scroll');
             }
         };
     };

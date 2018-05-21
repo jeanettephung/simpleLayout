@@ -15,7 +15,7 @@
             <div class="logo  logo--header">
                 <span class="logo__tag">&lt;</span> <span class="logo__tagname">Jen</span> <span class="logo__tag">/&gt;</span>
             </div>
-            <div data-ui-component="nav__items" class="flex  flex--align-items">
+            <div data-ui-component="nav__items" class="flex  flex--align-items  mobile--hide">
                 <ul>
                     <li class="nav__item"><a class="nav__link" href="#">Link 1</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Link 2</a></li>
@@ -32,12 +32,26 @@
 
 
     <main>
-        <div class="banner">
-            <div class="overlay__glass"></div>
-            <img class="width--100" src="assets/img/bright-close-up-colors-1073069.jpg">
+        <div data-ui-component="banner" class="height--vh">
+            <img class="banner__img" src="assets/img/bright-close-up-colors-1073069.jpg">
         </div>
     
+        <section class="bg--primary  card__container">
+            <div class="card--flip">
+                <div class="card--flip__inner">
+                    <div class="card  card__content  card--flip__front">
+                        <h1>CSS Page Flip</h1>
+                        <p>hover over page to flip</p>
+                    </div>
+                    <div class="card  card__content  card--flip__back">
+                        <h1>Back</h1>
+                        <p>unhover over page</p>
+                    </div>
+                </div>
+            </div>
 
+            
+        </section>
     </main>
 
 
